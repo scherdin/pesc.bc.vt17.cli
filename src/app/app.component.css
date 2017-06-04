@@ -7,4 +7,36 @@
             width: 100%;
         }
     }
-   
+   #portfolio .card{
+    max-width: 650px;
+    margin: 0 auto;
+    position: relative;
+    /*display: block;
+    
+     */
+   }
+   #portfolio .card .card-img-overlay{
+    position: absolute;
+    bottom: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    opacity: 0;
+    color: white;
+    background: rgba(22, 22, 22, 0.7);
+    -webkit-transition: all .2s;
+    -moz-transition: all .2s;
+    transition: all .2s; 
+   }
+    #portfolio .card .card-img-overlay .card-text{
+      position: absolute;
+      top: 50%;
+      width: 85%;
+      transform: translateY(-50%);
+      text-align: center; 
+      text-transform: uppercase 
+    }
+    #portfolio .card .card-img-overlay:hover{
+        opacity: 1;
+   }
