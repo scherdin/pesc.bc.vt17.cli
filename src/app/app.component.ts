@@ -9,7 +9,9 @@ import {environment} from '../environments/environment';
 export class AppComponent {
   title = 'app';
   environment: string;
+  buildNumber: string;
   constructor(){
     this.environment = environment.envName;
+    this.buildNumber = environment.build;
   }
 }
